@@ -1,0 +1,40 @@
+{
+  "webroot": "wwwroot",
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "Microsoft.AspNet.Buffering": "1.0.0-beta8",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-beta8",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-beta8",
+    "AspNet5Profiler": "",
+    "Microsoft.Framework.Logging.Abstractions": "1.0.0-beta8",
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta8",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-beta8"
+  },
+
+  "commands": {
+    "web": "Microsoft.AspNet.Server.Kestrel"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Collections": "4.0.11-beta-23409",
+        "System.Linq": "4.0.1-beta-23409"
+      }
+    }
+  },
+
+  "exclude": [
+    "wwwroot",
+    "node_modules"
+  ],
+  "publishExclude": [
+    "**.user",
+    "**.vspscc"
+  ]
+}
